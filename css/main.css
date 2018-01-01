@@ -1,0 +1,55 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*clases reutilizables*/
+
+.color-fond {
+  background-color: #2b2b2b;
+  color: #db8239;
+}
+
+/*vista splash*/
+
+.splash {
+  height: 100vh;
+  font-size: 3em;
+}
+
+.logo {
+  transform: translateY(500%);
+}
+
+/*clases para el titulo*/
+
+.size-title {
+  font-size: 3em;
+}
+
+.mrg-search {
+  margin-bottom: 50px;
+}
+
+.back-search {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+header hr {
+  border: 1px solid #fff;
+  margin-top: 0px;
+  width: 85%;
+}
+
+.hr-space {
+  padding: 0px;
+  height: 75px;
+}
+
+.img {
+  padding: 15px;
+}
+
+.food-img {
+  padding: 0px 15px;
+}
