@@ -1,11 +1,19 @@
-$("document").ready(function(){
-  $(".section").hide();
-    mostrar();
+function begin(){
+  $('.section').hide();
 
-  })
+    setTimeout(function() {
+     $('.splash').fadeOut(3000);
+     $('.section').show();
+   },1000 );
 
-  function mostrar(){
-    $(".splash").fadeOut(3000);
-    $(".section").show();
 
-  }
+
+
+
+
+
+
+
+}
+
+$(document).ready(begin);
