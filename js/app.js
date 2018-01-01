@@ -19,19 +19,16 @@ function begin(){
 
        var $text = $('<p></p>');
        $text.addClass('title');
-       $text.$text(data[i].name);
-       containerFoods.append($text);
+       $containerFoods.append($text);
 
-
-
-
-
-
-
+      var $img = $( "<img/>");
+      $img.addClass('img-responsive');
+      $img.attr('src', data[i].image);
+      $containerFoods.append($img);
      }
-
    }
 
+showRestaurants();
 
 
 
