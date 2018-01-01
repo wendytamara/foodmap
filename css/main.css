@@ -41,15 +41,11 @@ header hr {
   width: 85%;
 }
 
-/*.hr-space {
-  padding: 0px;
-  height: 75px;
-}*/
-
-.img {
-  padding: 15px;
+.food-img {
+  height: 130px !important;
+  width: -webkit-fill-available;
 }
 
-.food-img {
-  padding: 0px 15px;
+.img {
+  height: auto !important;
 }
