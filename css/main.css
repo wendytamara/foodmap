@@ -57,7 +57,10 @@ header hr {
   height: 250px;
   opacity: 0.5;
   width: 250px;
+}
 
+.form-control {
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
