@@ -12,52 +12,54 @@
     <div class="splash color-fond">
       <div class="text-center logo">Foodmap </div>
     </div>
-    <header class="section color-fond">
+
+    <section id="contain"  class="bady color-fond">
       <div class="container">
         <div class="row">
           <h1 class="text-center size-title">Foodmap</h1>
           <hr>
         </div>
       </div>
-    </header>
-    <main class="section color-fond">
-      <div class="container">
-        <div class="row">
-          <iframe class="col-xs-10 col-xs-offset-1" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31205.51412188825!2d-77.02336825829651!3d-12.133400497650415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1514776226264"  frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="container">
+          <div class="row">
+            <iframe class="col-xs-10 col-xs-offset-1" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31205.51412188825!2d-77.02336825829651!3d-12.133400497650415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1514776226264"  frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row mrg-search">
-          <h3 class="text-center">Comida cerca de ti</h3>
-          <div class="input-group col-xs-10 col-xs-offset-1">
-             <input type="text" class="form-control" placeholder="Filtrar restaurantes">
-             <span class="input-group-btn">
-             <button class="btn btn-default back-search" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-             </span>
-           </div>
+        <div class="container">
+          <div class="row mrg-search">
+            <h3 class="text-center">Comida cerca de ti</h3>
+            <div class="input-group col-xs-10 col-xs-offset-1">
+               <input id="filtro" type="text" class="form-control" placeholder="Filtrar restaurantes">
+               <span class="input-group-btn">
+               <button class="btn btn-default back-search" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+               </span>
+             </div>
+          </div>
         </div>
-      </div>
-    </main>
 
-    <aside class="color-fond">
-      <div class="container color-fond">
-        <div class="row">
-            <div class="col-xs-12" id="restaurants">
-            </div>
+
+
+        <div class="container">
+          <div class="row">
+              <div class="col-xs-12 container-restaurants" id="restaurants">
+              </div>
+          </div>
         </div>
-      </div>
-    </aside>
+
+    </section>
+
+
     <section class="">
-      <div class="modal fade" data-target="#myModal">  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div id="myModal" class="modal-dialog modal-lg" role="document">
-        <div class="modal-content ">
+        <div class="modal-content">
           <div class="modal-background">
-          <div class="modal-header">
-            <img class="logo img-responsive center-block img-thumbnail col-xs-6" alt="logo restaurante">
+          <div class="modal-header row">
+            <img class="logo-restaurant img-responsive center-block " alt="logo restaurante">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
           <div class="modal-body row">
-            <img class="restaurante img-responsive img-thumbnail col-xs-6" alt="Restaurante">
+            <img class="restaurant img-responsive col-xs-6" alt="Restaurante">
             <div class="col-xs-6">
               <div>
                 <strong><h4 class="subtitle">Dirección:</h4></strong>
@@ -71,7 +73,7 @@
                 <strong><h4 class="subtitle">Especialidad:</h4></strong>
                 <strong><p class="food text-center"></p></strong>
               </div>
-              <button class="btn btn-lg btn-block btn-warning"><strong>Pedir Ahora</strong></button>
+              <button class="btn btn-lg btn-block btn-primary"><strong>Pedir Ahora</strong></button>
             </div>
           </div>
           </div>
