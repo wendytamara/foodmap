@@ -42,10 +42,33 @@ header hr {
 }
 
 .food-img {
-  height: 130px !important;
   width: -webkit-fill-available;
 }
 
 .img {
   height: auto !important;
+}
+
+.container-restaurants {
+  padding: 0px 30px;
+}
+
+.transition-img {
+  height: 250px;
+  opacity: 0.5;
+  width: 250px;
+
+}
+
+@media (max-width: 768px) {
+  .food-img {
+    height: 130px !important;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .food-img {
+    height: 170px !important;
+  }
 }
