@@ -10,6 +10,7 @@ function begin() {
     for (var i = 0; i < data.length; i++) {
       var $containerFoods = $('<div></div>');
       $containerFoods.addClass('col-xs-6 col-md-4 collection box');
+      $containerFoods.attr('data-name', data[i].name);
       $containerFoods.attr('data-toggle', 'modal');
       $containerFoods.attr('data-target', '#myModal');
       $container.append($containerFoods);
@@ -54,9 +55,9 @@ function begin() {
 
   // funcion mouseover
   $('.box').on('mouseover', function() {
-    $(this).addClass('.transition-img');
+    $(this).addClass('transition-img');
     $('.box').on('mouseout', function() {
-      $(this).removeClass('.transition-img');
+      $(this).removeClass('transition-img');
     });
   });
 }
