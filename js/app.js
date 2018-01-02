@@ -29,6 +29,17 @@ function begin() {
 
   showRestaurants();
 
+  $('#filtro').keyup(function() {
+    var nombre = $(this).val();
+    $('.collection').hide();
+    $('.collection').each(function(){
+      var search = $(this).text();
+      if (search.indexOf(nombre) !== -1) {
+        $(this).show();
+      }
+     });
+   })
+
   $('.box').on('click', function() {
     for (i = 0; i < data.length; i++) {
       if ($(this).data('name') === data[i].name) {
