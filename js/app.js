@@ -1,17 +1,18 @@
 function begin(){
-  $('.section').hide();
 
+  $('#contain').hide();
     setTimeout(function() {
-     $('.splash').fadeOut(3000);
-     $('.section').show();
-   },1000 );
+     $('.splash').fadeOut();
+     $('#contain').show();
+   },2000 );
+
 
    var $container = $('#restaurants');
 
    function showRestaurants() {
      for (var i = 0; i < data.length; i++) {
        var $containerFoods = $('<div></div>');
-       $containerFoods.addClass('col-xs-6 col-md-4');
+       $containerFoods.addClass('col-xs-6 col-md-4 collection box');
        $containerFoods.attr('data-name', data[i].name);
        $containerFoods.attr('data-toggle', 'modal');
        $containerFoods.attr('data-target', '#myModal');
@@ -19,6 +20,7 @@ function begin(){
 
        var $text = $('<p></p>');
        $text.addClass('title');
+       $text.text(data[i].name);
        $containerFoods.append($text);
 
       var $img = $( "<img/>");
@@ -28,9 +30,28 @@ function begin(){
      }
    }
 
-showRestaurants();
+   showRestaurants();
 
 
+  $('.box').on('click', function() {
+  for (i = 0; i < data.length; i++) {
+    if ($(this).data('name') === data[i].name) {
+      $('.logo-restaurant').attr('src', data[i].logo);
+      $('.restaurant').attr('src', data[i].local);
+      $('.address').text(data[i].address);
+      $('.price').text(data[i].price);
+      $('.food').text(data[i].type);
+    }
+  }
+});
+
+
+  $('.box').on('mouseover', function() {
+    $(this).addClass('transition-img')
+  $('.box').on('mouseout', function(){
+    $(this).removeClass('transition-img')
+    })
+  });
 
 
 
