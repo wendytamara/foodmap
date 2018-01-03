@@ -25,7 +25,6 @@
 
 * Se realizo la pagina web adaptable (responsive) tanto para desktop como para dispositivos moviles, utilizando bootstrap.
 
-
 ## *vista splash:*
 
 ![desktop](assets/docs/splash.png)
@@ -38,12 +37,19 @@
 
 ![desktop](assets/docs/vista-principal-desktop.png)
 
+## *Filtro por nombre:*
 
+![desktop](assets/docs/filto.png)
 
+## *Evento mauseover:*
 
+![desktop](assets/docs/mauseover.png)
+
+## *modal:*
+
+![desktop](assets/docs/modal.png)
 
 ## *Proyecto desplegado en:*
 
-* [github](https://github.com/wendytamara/my-page "Título del enlace")
 
-* [gh-pages](https://wendytamara.github.io/my-page/ "Título del enlace")
+* [gh-pages](https://wendytamara.github.io/foodmap/ "foodmap")
